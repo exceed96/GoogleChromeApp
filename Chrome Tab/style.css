@@ -1,0 +1,137 @@
+:root {
+    --Header-FontSize: 18px;
+    --Footer-FontSize: 24px;
+    --Main-Time-FontSize: 120px;
+    --Main-FontSize: 58px;
+    --Footer-PhrasesFontSize: 16px;
+    --Backgroundo-color: #000000;
+    --Font-color: #ffffff;
+}
+
+* {
+    /* background-color: var(--Backgroundo-color); */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--Font-color);
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: url("img/img2.jpg") no-repeat center/cover;
+}
+
+/*header*/
+.Header .HeaderNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    font-size: var(--Header-FontSize);
+    /* background-color: antiquewhite; */
+}
+
+.Header .HeaderNav .HeaderLeft {
+    display: flex;
+}
+
+.Header .HeaderNav .HeaderLeft li {
+    padding: 8px 12px;
+}
+
+.Header .HeaderNav .HeaderLeft #GoogleSearch {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.Header .HeaderNav .HeaderLeft #GoogleSearch:focus {
+    outline: none;
+}
+
+.Header .HeaderNav .HeaderRight {
+    display: flex;
+    align-items: center;
+}
+
+.Header .HeaderNav .HeaderRight li {
+    padding: 8px 12px;
+}
+
+.Header .HeaderNav .HeaderRightLeft {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*header*/
+
+
+/*main*/
+
+.Main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+.Main .MainContents .Time {
+    font-size: var(--Main-Time-FontSize);
+}
+
+.Main .LabelName {
+    font-size: var(--Main-FontSize);
+}
+
+.Main #ShowUserName {
+    font-size: var(--Main-FontSize);
+}
+
+.Main .MainContents #LoginUserForm #InputUserName {
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    border-bottom: 1px white solid;
+    font-size: 40px;
+    opacity: 0;
+}
+
+.Main .MainContents #LoginUserForm #InputUserName:hover {
+    opacity: 1;
+}
+
+.Main .MainContents #LoginUserForm #InputUserName:focus {
+    outline: none;
+    opacity: 1;
+}
+
+/*main*/
+
+
+/*footer*/
+
+.Footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 24px;
+    font-size: var(--Footer-FontSize);
+}
+
+.Footer li:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--Footer-PhrasesFontSize);
+}
+
+.hidden {
+    display: none;
+}

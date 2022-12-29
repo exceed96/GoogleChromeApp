@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b13a3419cb.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="js/Time.js" defer></script>
+    <script src="js/UserName.js" defer></script>
+    <script src="js/Phrases.js" defer></script>
+</head>
+
+<body>
+    <header class="Header">
+        <nav class="HeaderNav">
+            <section class="HeaderLeft">
+                <li><a href="#">Links</a></li>
+                <li><label for="GoogleSearch"></label></li>
+                <li><input type="text" id="GoogleSearch"></li>
+            </section>
+            <section class="HeaderRight">
+                <li>
+                    <div class="HeaderRightLeft">
+                        <i class="fa-regular fa-square-plus"></i>
+                        <span>Add</span>
+                    </div>
+                </li>
+                <li><a href="#">Weather</a></li>
+            </section>
+        </nav>
+    </header>
+    <main class="Main">
+        <section class="MainContents">
+            <p class="Time">00:00:00</p>
+            <form id="LoginUserForm">
+                <label for="InputUserName" class="LabelName" action="">Enter your name</label>
+                <li><input required type="text" id="InputUserName"></li>
+            </form>
+            <p id="ShowUserName" class="hidden"></p>
+        </section>
+    </main>
+    <footer class="Footer">
+        <li><a href="#">settings</a></li>
+        <li>
+            <span></span>
+            <span></span>
+        </li>
+        <li><a href="#">Todo</a></li>
+    </footer>
+</body>
+
+</html>
